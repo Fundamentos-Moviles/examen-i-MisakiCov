@@ -84,7 +84,7 @@ class NotificationCard extends StatefulWidget {
   final Set<int> specialIds;
 
   NotificationCard({
-    this.id = 0,
+    required this.id,
     required this.date,
     required this.title,
     required this.description,
@@ -141,12 +141,6 @@ class _NotificationCardState extends State<NotificationCard> {
                     style: TextStyle(fontSize: 12.0),
                   ),
                   Row(
-                    children: List.generate(5, (index) => Icon(
-                      Icons.star,
-                      color: index < widget.starCount ? Colors.yellow : Colors.grey,
-                    )),
-                  ),
-                  Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       if (showDeleteButton)
@@ -156,6 +150,16 @@ class _NotificationCardState extends State<NotificationCard> {
                         )
                     ],
                   ),
+                  Align(
+                    alignment: Alignment.bottomRight,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: List.generate(5, (index) => Icon(
+                        Icons.star,
+                        color: index < widget.starCount ? Colors.yellow : Colors.grey,
+                      )),
+                    ),
+                  )
                 ],
               ),
             ),
