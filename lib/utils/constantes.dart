@@ -10,16 +10,16 @@ const botones = Color(0xffdca900);
 const efectos = Color(0xff919b02);
 
 const List Lista = [
-  '3#15#12#Enero#María#López#Amantedelamúsica#7',
-  '4#22#8#Febrero#Juan#Pérez#Aficionadoalcine#9',
-  '5#30#19#Marzo#Ana#García#Entusiastadeldeporte#6',
-  '6#17#25#Abril#Carlos#Martínez#Fanáticodelatecnología#8',
-  '7#5#14#Mayo#Laura#Rodríguez#Apasionadaporlalectura#4',
-  '8#11#21#Junio#Pedro#Sánchez#Amantedelosanimales#3',
-  '9#28#9#Julio#Sofía#Fernández#Cocineraexperta#10',
-  '10#3#18#Agosto#Luis#Ramírez#Viajeroincansable#2',
-  '11#19#7#Septiembre#Elena#Torres#Fotógrafaaficionada#5',
-  '12#6#13#Octubre#Miguel#Gómez#Jardineroapasionado#1',
-  '13#24#22#Noviembre#Isabel#Díaz#Artistacreativa#6',
-  '14#10#30#Diciembre#Roberto#Morales#Amantedelcine#4',
+  '3#15#12#Enero#María#López#Amante de la música#2',
+  '4#22#8#Febrero#Juan#Pérez#Aficionado al cine#3',
+  '5#30#19#Marzo#Ana#García#Entusiasta del deporte#5',
+  '6#17#25#Abril#Carlos#Martínez#Fanático de la tecnología#1',
+  '7#5#14#Mayo#Laura#Rodríguez#Apasionada por la lectura#4',
+  '8#11#21#Junio#Pedro#Sánchez#Amante de los animales#3',
+  '9#28#9#Julio#Sofía#Fernández#Cocinera experta#3',
+  '10#3#18#Agosto#Luis#Ramírez#Viajero incansable#2',
+  '11#19#7#Septiembre#Elena#Torres#Fotógrafa aficionada#5',
+  '12#6#13#Octubre#Miguel#Gómez#Jardinero apasionado#1',
+  '13#24#22#Noviembre#Isabel#Díaz#Artista creativa#5',
+  '14#10#30#Diciembre#Roberto#Morales#Amante del cine#4',
 ];

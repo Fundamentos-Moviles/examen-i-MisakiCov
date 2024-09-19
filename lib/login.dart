@@ -30,7 +30,7 @@ class _LoginScreenState extends State<LoginScreen> {
         _errorMessage = 'Contraseña incorrecta';
       } else {
         _errorMessage = '';
-        Navigator.push(
+        Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (context) => HomeScreen()),
         );
@@ -76,7 +76,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     decoration: InputDecoration(
                       filled: true,
                       fillColor: Colors.white,
-                      labelText: 'Correo',
+                      hintText: 'Correo',
                       border:OutlineInputBorder(
                         borderRadius:BorderRadius.circular(20),
                         borderSide: const BorderSide(
@@ -99,7 +99,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     decoration: InputDecoration(
                       filled: true,
                       fillColor: Colors.white,
-                      labelText: 'Contraseña',
+                      hintText: 'Contraseña',
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20),
                         borderSide: const BorderSide(
@@ -153,6 +153,7 @@ class RandomColoredSquares extends StatelessWidget {
     final int columns = 4;
 
     return GridView.builder(
+      physics: NeverScrollableScrollPhysics(), // Deshabilitar el desplazamiento
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: columns, // Número de columnas
       ),
